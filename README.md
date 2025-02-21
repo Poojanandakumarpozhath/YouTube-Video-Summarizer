@@ -1,18 +1,23 @@
-# YouTube-Video-Summariser
-This is a YouTube video summarizer and question-answering tool implemented as a Chrome extension. It provides concise summaries of video transcripts and answer questions based on the video content. The application also supports summarizing videos in various languages by automatically translating the transcripts to the desired language before generating the summary.
-This project aims to enhance the YouTube viewing experience by offering users a convenient way to quickly grasp the essence of a video through a summarized transcript and engage with the content by asking questions and receiving relevant answers, regardless of the language of the video.
+# YouTube Video Summarizer  
 
-## Requirements
-- Python (3.6 or later)
-- Flask
-- youtube-transcript-api
-- googletrans
+This Chrome extension functions as a YouTube video summarization and question-answering tool. It generates concise summaries of video transcripts and allows users to ask questions based on the video’s content. Additionally, it supports multiple languages by automatically translating transcripts before summarization.  
 
-## Executing the code
-- Update your GEMINI_API_KEY in the ```.env``` file
-- To set up the backend server
-  ```bash
-  $ python app.py
-  ```
-- Load the Chrome Extension by navigating to ```chrome://extensions/``` and enable 'Developer mode'. Click 'Load unpacked' and select the directory ```extension``` which contains the ```manifest.json```
-- Go to any YouTube video and click on the 'Summarize' button to start summarizing.
+The goal of this project is to enhance the YouTube viewing experience by enabling users to quickly grasp key insights from videos through summarized transcripts and interact with the content through a Q&A feature, regardless of the video's original language.  
+
+## Requirements  
+- Python (3.6 or later)  
+- Flask  
+- youtube-transcript-api  
+- googletrans  
+
+## How to Run  
+1. Update your `GEMINI_API_KEY` in the `.env` file.  
+2. Start the backend server:  
+   ```bash
+   python app.py
+   ```  
+3. Load the Chrome Extension:  
+   - Open `chrome://extensions/` in your browser.  
+   - Enable 'Developer mode.'  
+   - Click 'Load unpacked' and select the `extension` directory containing `manifest.json`.  
+4. Visit any YouTube video and click the 'Summarize' button to generate a summary.
